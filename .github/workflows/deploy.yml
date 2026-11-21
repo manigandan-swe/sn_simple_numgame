@@ -6,5 +6,6 @@ on:
   workflow_dispatch:
 jobs:
   jobtest:
-    -name: Test Job
-    run: echo "This is a test job for the Game Deployment workflow."
+    steps:
+      - name: Test Job
+        run: echo "This is a test job for the Game Deployment workflow."
