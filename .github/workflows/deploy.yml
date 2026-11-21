@@ -1,0 +1,10 @@
+name: Game Deployment
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+jobs:
+  jobtest:
+    -name: Test Job
+    run: echo "This is a test job for the Game Deployment workflow."
