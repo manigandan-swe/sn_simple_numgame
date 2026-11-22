@@ -16,6 +16,7 @@ jobs:
           run: echo "This is a test deployment step for the Game Deployment workflow."
   
   Job1:
+    needs: jobtest
     runs-on: ubuntu-latest
     steps:
       - name : checking
