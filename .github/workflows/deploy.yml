@@ -4,10 +4,12 @@ on:
     branches:
       - main
   workflow_dispatch:
-  
+
 jobs:
   jobtest:
     runs-on: ubuntu-latest
     steps:
       - name: Test Job
         run: echo "This is a test job for the Game Deployment workflow."
+      - name: Test Deployment
+        run: echo "This is a test deployment step for the Game Deployment workflow."
