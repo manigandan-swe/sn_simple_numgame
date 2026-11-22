@@ -9,8 +9,8 @@ jobs:
   jobtest:
     runs-on: ubuntu-latest
     steps:
-      - parallel: true
-      - name: Test Job
-        run: echo "This is a test job for the Game Deployment workflow."
-      - name: Test Deployment
-        run: echo "This is a test deployment step for the Game Deployment workflow."
+      - parallel:
+        - name: Test Job
+          run: echo "This is a test job for the Game Deployment workflow."
+        - name: Test Deployment
+          run: echo "This is a test deployment step for the Game Deployment workflow."
